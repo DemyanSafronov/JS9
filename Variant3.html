@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#but1").click(function(){
+					$("a[href]").hide();
+				});
+				$("#but2").click(function(){
+					$("a[href]").show();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<button id = "but1">Скрыть элементы с атрибутом href</button>
+		<button id = "but2">Отобразить элементы с атрибутом href </button>
+		<p align="left"><a href="https://github.com/" style="width: 500px;">https://github.com/</a></p>
+		<p align="left"><a href="https://jquery.com/" style="width: 500px;">https://jquery.com/</a></p>
+	</body>
+</html>
